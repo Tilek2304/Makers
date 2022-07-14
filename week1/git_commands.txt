@@ -32,3 +32,5 @@ git commit - создание коммита
 git push origin branch_name - отправка версии кода на github репозиторий где branch_name - имя ветки
 
 git clone link_repo - позволяет скопировать чей либо репозиторий или свой в место link_repo вставляется ссылка
+
+git diff - просмотр внесенных изменений
