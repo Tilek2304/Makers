@@ -34,3 +34,10 @@ git push origin branch_name - отправка версии кода на github
 git clone link_repo - позволяет скопировать чей либо репозиторий или свой в место link_repo вставляется ссылка
 
 git diff - просмотр внесенных изменений
+
+git branch - вывод списка веток в терминал
+git branch branch_name - создание ветки branch_name
+
+git switch branch_name - переход на определенную ветку 
+git checkout branch_name - переход на определенную ветку
+
