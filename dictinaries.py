@@ -8,6 +8,9 @@ Cловарь - изменяемый, итерируемый.
 то последний ключ обновит первый
 """
 
+from operator import contains
+
+
 dict_ = {} #Первый метод создания словаря ключевой синтаксис "{}"
 passport = {
     'name': 'Tilek',
@@ -44,5 +47,33 @@ print(passport) #Возвращает весь словарь
 print(dict6)
 dict6.pop('d', 'нет такого ключа')
 print(dict6)
-dict6.popitem()
-print(dict6)
+
+print(dict6.popitem())
+for i in dict6:
+    print(dict6[i])
+
+for i in dict6:
+    print(i) 
+
+"""keys(), values(), items()"""
+
+for i in dict6.values():
+    print(i)
+for i in dict6.keys():
+    print(i)
+for i in dict6.items():
+    print(i)
+
+for key, value in dict6.items():
+    print(f'ключи - {key} значения - {value}')
+contacts = {
+    'names': {
+        'Tilek': 701460007,
+        'Jamin': 500413314
+    }
+}
+print(contacts['names']['Tilek'])
+names = contacts['names']
+print(names['Tilek'])
+
+
