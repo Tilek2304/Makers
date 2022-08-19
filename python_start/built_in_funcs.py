@@ -38,24 +38,24 @@ lambda
 # res = map(plus_ten, nums)
 # print(list(res))
 
-# def plus_ten(x,y):
-#     return x+y
-# nums = [1,2,3,4,5]
-# nums2 = [1,2,3,4,5,6]
-# res = list(map(plus_ten, nums, nums2))
-# print(res)
+def plus_ten(x,y):
+    return x+y
+nums = [1,2,3,4,5]
+nums2 = [1,2,3,4,5,6]
+res = list(map(plus_ten, nums, nums2))
+print(res)
 
 
-# nums = [1,2,3,4,5]
-# nums2 = [1,2,3,4,5,6]
-# res = list((map(lambda word, nums: word+15+nums,nums2,nums)))
-# print(res)
+nums = [1,2,3,4,5]
+nums2 = [1,2,3,4,5,6]
+res = list((map(lambda word, nums: word+15+nums,nums2,nums)))
+print(res)
 
 # filter(func, Iterable) - принимает функцию и итер. объект. Фильтрует по условию, указанную в функции
 
-# num = [45,34,56,89,0,2,4,34,65,76,87]
-# filter_num = list(filter(lambda nums:nums%5==0,num))
-# print(filter_num)
+num = [45,34,56,89,0,2,4,34,65,76,87]
+filter_num = list(filter                    (lambda nums:nums%5==0,num))
+print(filter_num)
 
 # from functools import reduce
 # nums = [10,20,30,40,50]
@@ -82,10 +82,50 @@ lambda
 # print(res)
 
 # zip() - связывает элементы переданных последовательностей
-list1 = [1,2,3,4,5]
-list2 = ['a','b','c']
-list3 = ['tilek', 'timur', 'elya']
-zipped_list = list(zip(list1,list2,list3))
-print(zipped_list)
-lista,listb,listc = list(zip(list1,list2,list3))
-print(lista,listb,listc)
+# list1 = [1,2,3,4,5]
+# list2 = ['a','b','c']
+# list3 = ['tilek', 'timur', 'elya']
+# zipped_list = list(zip(list1,list2,list3))
+# print(zipped_list)
+# lista,listb,listc = list(zip(list1,list2,list3))
+# print(lista,listb,listc)
+
+"""all(), any()"""
+
+# all(iterible) - возвращает True, 
+# если все элементы внутри последовательности являются True, иначе False
+
+# list_ = [True, True, True]
+# print(all(list_))
+
+# list_1 = [True,False,True]
+# print(all(list_1))
+
+# num_list = [9,7,1,5,6]
+# print(all(num_list))
+
+# num_list = [9,7,1,5,0,6]
+# print(all(num_list))
+
+# False
+# None
+# ''
+# {}
+# []
+# set()
+# tuple()
+# 0
+
+# all(map(lambda x: x+10, [1,2,3]))
+# all(i for i in range(10))
+
+# any(iterable) - возвращает True, если хотя бы один элемент True, иначе False
+
+# list_ = [True,True,True]
+# print(any(list_))
+
+# list_ = [True,False,True]
+# print(any(list_))
+
+# callable(obj) - принимает объект и проверяет ее на возможность вызова
+# exec(a) - выполняет строки кода

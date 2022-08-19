@@ -1,3 +1,6 @@
-def func(arg1, arg2='1'):
-    print(arg1,arg2)
-func(arg2='1',arg1='2')
+def is_palindrome(string):
+    if string == string[::-1]:
+        return True
+    else:
+        return False
+print(is_palindrome('Mom'))
